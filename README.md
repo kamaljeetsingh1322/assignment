@@ -1,5 +1,6 @@
 I worked with Next.js for first time so was only able make up to this. I made some more functions which aren't visible on netifly app Link but are working fine on LocalHost. 
 I guess, i wasn't able to deploy it completely. 
+These are CRUD features: Creating user, Deleting User and Viewing User below in the list after fecthing.
 
 ![Screenshot (92)](https://user-images.githubusercontent.com/73416170/155828142-aa65267b-44d0-4ad5-bcab-1bd0cd5946d2.png)
 ![Screenshot (93)](https://user-images.githubusercontent.com/73416170/155828143-56a056a0-5960-4c2d-baed-07d2cef6555e.png)
