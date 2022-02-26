@@ -67,14 +67,14 @@ const List = () => {
                   <TableCell align="center">
                     <Tooltip title="View">
                       <IconButton>
-                        <CustomLink to={`/view/${users.id}`}>
+                        <CustomLink href={`/view/${users.id}`}>
                           <VisibilityIcon color="primary" />
                         </CustomLink>
                       </IconButton>
                     </Tooltip>
                     <Tooltip title="Edit">
                       <IconButton>
-                        <CustomLink to={`/edit/${users.id}`}>
+                        <CustomLink href={`/edit/${users.id}`}>
                           <EditIcon />
                         </CustomLink>
                       </IconButton>
