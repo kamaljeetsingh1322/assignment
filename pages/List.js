@@ -10,7 +10,8 @@ import {
   IconButton,
   Tooltip,
 } from "@mui/material";
-
+import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -64,6 +65,21 @@ const List = () => {
                   <TableCell align="center">{users.uname}</TableCell>
                   <TableCell align="center">{users.uemail}</TableCell>
                   <TableCell align="center">
+                    <Tooltip title="View">
+                      <IconButton>
+                        <CustomLink to={`/view/${users.id}`}>
+                          <VisibilityIcon color="primary" />
+                        </CustomLink>
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Edit">
+                      <IconButton>
+                        <CustomLink to={`/edit/${users.id}`}>
+                          <EditIcon />
+                        </CustomLink>
+                      </IconButton>
+                    </Tooltip>
+
                     <Tooltip title="Delete">
                       <IconButton onClick={() => handleDelete(users.id)}>
                         <DeleteIcon color="secondary" />
